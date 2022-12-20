@@ -5,7 +5,7 @@ import Menutabs from './Menutabs'
 const Body = () => {
   return (
     <div>
-        <Container className='d-block w-100%'>
+        <Container className='d-block w-100'>
         <Carousel variant="dark">
       <Carousel.Item>
         <img
@@ -57,9 +57,9 @@ const Body = () => {
       </Carousel.Item>
     </Carousel>
       <Card className='text-center'>
-      <Card.Header>Featured</Card.Header>
+      <Card.Header></Card.Header>
       <Card.Body>
-        <Card.Title>Special title treatment</Card.Title>
+        <Card.Title><h3><span>Special title treatment</span></h3></Card.Title>
         <Card.Text>
           With supporting text below as a natural lead-in to additional content.
         </Card.Text>
@@ -67,30 +67,112 @@ const Body = () => {
       </Card.Body>
     </Card>
 
-    <Tabs
-      defaultActiveKey="profile"
-      id="uncontrolled-tab-example"
-      className="mb-3"
-    >
-      <Tab eventKey="Burgers" title="Burgers">
-        <Menutabs />
-      </Tab>
-      <Tab eventKey="Sandwich" title="Sandwich">
-        <Menutabs/>
-      </Tab>
-      <Tab eventKey="Appetizers" title="Appetizers">
-        {/* <Menutabs /> */}
-        <p>
-        As an unperfect actor on the stage, Who with his fear is put beside his 
-        part, Or some fierce thing replete with too much rage, Whose strength's 
-        abundance weakens his own heart; So I, for fear of trust, forget to 
-        say The perfect ceremony of love's rite, And in mine own love's 
-        strength seem to decay, O'ercharg'd with burthen of mine own love's 
-        might. O! let my looks be then the eloquence And dumb presagers of my 
-        speaking breast
-        </p>
-      </Tab>
-    </Tabs>
+      <div>
+          <Tabs
+            defaultActiveKey="profile"
+            id="Menu-Tabs"
+            className="mb-3"
+            fill
+          >
+            <Tab eventKey="Burgers" title="Burgers">
+              <Menutabs />
+            </Tab>
+            <Tab eventKey="Sandwich" title="Sandwich">
+            <div >
+                <div className="d-flex menus">
+                <div className="p-2 flex-grow-1">Steak Sandwich</div>
+                <div className="p-2">3500</div>
+                </div>
+
+                <div className="d-flex menus">
+                <div className="p-2 flex-grow-1">Chicken Avcado Sandwich</div>
+                <div className="p-2">3500</div>
+                </div>
+
+                <div className="d-flex menus">
+                <div className="p-2 flex-grow-1">Mexican Sandwich</div>
+                <div className="p-2">3500</div>
+                </div>
+
+                <div className="d-flex menus">
+                <div className="p-2 flex-grow-1">Steak Wrap</div>
+                <div className="p-2">3500</div>
+                </div>
+              </div>
+            </Tab>
+            <Tab eventKey="Appetizers" title="Appetizers">
+              {/* <Menutabs /> */}
+              {/* <div>
+                <p className='menus'>
+                  Mozarella Sticks 2500
+                </p>
+                <p className='menus'>
+                  Chicken Tenders 2500
+                </p>
+                <p className='menus'>
+                  Loaded Fries 2500
+                </p>
+                <p className='menus'>
+                  Buffalo Wings  2500
+                </p>
+              </div> */}
+              <div >
+                <div className="d-flex menus">
+                <div className="p-2 flex-grow-1">Mozarella Sticks</div>
+                <div className="p-2">3500</div>
+                </div>
+
+                <div className="d-flex menus">
+                <div className="p-2 flex-grow-1">Chicken Tenders</div>
+                <div className="p-2">3500</div>
+                </div>
+
+                <div className="d-flex menus">
+                <div className="p-2 flex-grow-1">Loaded Fries</div>
+                <div className="p-2">3500</div>
+                </div>
+
+                <div className="d-flex menus">
+                <div className="p-2 flex-grow-1">Buffalo Wings</div>
+                <div className="p-2">3500</div>
+                </div>
+              </div>
+            </Tab>
+            <Tab eventKey="Shakes" title="Shakes">
+              <div>
+                {/* <p className='menus'>
+                  Oreo Milk Shakes 2500
+                </p>
+                <p className='menus'>
+                  Vanilla Milk Shakes 2500
+                </p>
+                <p className='menus'>
+                  Strawberry Milk Shakes 2500
+                </p>
+                <p className='menus'>
+                  Chocolate Milk Shakes  2500
+                </p> */}
+                <div >
+                <div className="d-flex menus">
+                <div className="p-2 flex-grow-1">Vanilla Milk Shakes</div>
+                <div className="p-2">3500</div>
+                </div>
+
+                <div className="d-flex menus">
+                <div className="p-2 flex-grow-1">Strawberry Milk Shakes</div>
+                <div className="p-2">3500</div>
+                </div>
+
+                <div className="d-flex menus">
+                <div className="p-2 flex-grow-1">Oreo Milk Shakes</div>
+                <div className="p-2">3500</div>
+                </div>
+              </div>
+
+              </div>
+            </Tab>
+          </Tabs>
+          </div>
     </Container>
     </div>
     

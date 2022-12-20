@@ -9,8 +9,8 @@ function App() {
   return (
   <>
       <Header/>
-      <main className='py-3 color-body'>
-        <Container>
+      <main className='py-1 color-body'>
+        <Container className='body-size'>
           <Body/>
         </Container>
       </main>
